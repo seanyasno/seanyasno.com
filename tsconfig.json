@@ -15,7 +15,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/types/index": ["src/abstraction/types/index.ts"]
+      "@/types/index": ["src/abstraction/types/index.ts"],
+      "@/consts/index": ["src/consts/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

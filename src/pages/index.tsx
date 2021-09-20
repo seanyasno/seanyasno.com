@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { Blog } from '@/types/index';
 import { Container, Typography, Box, Grid } from '@mui/material';
 
