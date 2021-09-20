@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@/types/index": ["src/abstraction/types/index.ts"],
-      "@/consts/index": ["src/consts/index.ts"]
+      "@/consts/index": ["src/consts/index.ts"],
+      "@/components/index": ["src/components/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
