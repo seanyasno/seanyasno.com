@@ -1,7 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { ThemeProvider } from '@emotion/react';
-import { theme } from '../consts';
-// import { theme } from '@/consts/index';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {

@@ -9,6 +9,9 @@ import Image from 'next/image';
 const Home: NextPage = () => {
   const sectionEl = useRef(null);
 
+  // React, JavaScript, TypeScript, Java, C#, Python, Git
+  // Flutter, Android Studio, HTML, CSS, SQL, PostgreSQL
+
   return (
     <Box>
       <Hero sectionEl={sectionEl} />
