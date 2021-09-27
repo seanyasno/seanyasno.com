@@ -1,4 +1,4 @@
-import { theme } from '@/consts/index';
+import { links, theme } from '@/consts/index';
 import { Typography, Avatar } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { MutableRefObject } from 'react';
@@ -35,7 +35,10 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
         </Typography>
         <Typography paragraph variant='h6'>
           You can join my journey through my blogs and see the code that I
-          commit on Github.
+          commit on{' '}
+          <a href={links.github}>
+            <b>Github.</b>
+          </a>
         </Typography>
       </Box>
 
