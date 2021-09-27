@@ -1,20 +1,25 @@
 import { theme } from '@/consts/index';
-import { Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 
 export const KnowledgeSection: React.FC = () => {
   return (
-    <Box
+    <Grid
+      container
       sx={{
         display: 'flex',
-        height: '50vh',
-        padding: '0px 200px',
+        minHeight: '50vh',
         justifyContent: 'space-between',
         color: theme.palette.secondary.contrastText,
+        margin: 'auto',
       }}
     >
-      <Box sx={{ display: 'inline-block', flex: 5, marginTop: '80px' }}>
+      <Grid
+        item
+        lg={6}
+        sx={{ display: 'inline-block', marginTop: '80px', padding: '0 60px' }}
+      >
         <Typography variant='h3' sx={{ marginBottom: '30px' }}>
           My Speciallity Knowledge
         </Typography>
@@ -30,13 +35,14 @@ export const KnowledgeSection: React.FC = () => {
           taking courses, CTFs, work and just reading and watching youtube
           videos.
         </Typography>
-      </Box>
-      <Box sx={{ flex: 1 }} />
-      <Box
+      </Grid>
+      <Grid
+        item
+        lg={5}
         sx={{
           display: 'inline-block',
-          flex: 4,
           marginTop: '80px',
+          padding: '0 60px',
         }}
       >
         <Typography variant='h3' sx={{ marginBottom: '30px' }}>
@@ -84,7 +90,7 @@ export const KnowledgeSection: React.FC = () => {
             </Typography>
           </Box>
         </Box>
-      </Box>
-    </Box>
+      </Grid>
+    </Grid>
   );
 };

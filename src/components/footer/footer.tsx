@@ -25,30 +25,15 @@ export const Footer: React.FC = () => {
         flexFlow: 'column',
       }}
     >
-      {/* <Box
-        sx={{
-          width: '400px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}
-      > */}
       <SocialLinks
         sx={{
-          width: '400px',
-          display: 'flex',
+          flex: 1,
           alignItems: 'center',
           justifyContent: 'space-between',
         }}
         padding='16px'
       />
-      {/* <Instagram sx={{ color: '#575A63' }} />
-        <LinkedIn sx={{ color: '#575A63', padding: '0 16px' }} />
-        <GitHub sx={{ color: '#575A63', paddingRight: '16px' }} />
-        <Twitter sx={{ color: '#575A63', paddingRight: '16px' }} />
-        <Mail sx={{ color: '#575A63' }} />
-      </Box> */}
-      <Box sx={{ marginTop: '30px' }}>
+      <Box sx={{ margin: '30px 0' }}>
         <Typography variant='caption'>© 2021 Sean Yasnogorodski</Typography>
       </Box>
     </Box>
