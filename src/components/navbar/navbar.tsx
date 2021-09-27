@@ -5,9 +5,13 @@ export const Navbar: React.FC = () => {
   return (
     <AppBar sx={{ height: '6vh' }} position='relative' elevation={0}>
       <Toolbar sx={{ justifyContent: 'end' }}>
-        <Typography sx={{ fontWeight: 'light', marginRight: '30px' }}>
-          Home
-        </Typography>
+        <Link href='/'>
+          <Typography
+            sx={{ fontWeight: 'light', marginRight: '30px', cursor: 'pointer' }}
+          >
+            Home
+          </Typography>
+        </Link>
         <Link href='/blogs'>
           <Typography
             sx={{ fontWeight: 'light', marginRight: '30px', cursor: 'pointer' }}
