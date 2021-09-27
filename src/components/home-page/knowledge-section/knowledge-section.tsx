@@ -13,6 +13,7 @@ export const KnowledgeSection: React.FC = () => {
         justifyContent: 'space-between',
         color: theme.palette.secondary.contrastText,
         margin: 'auto',
+        marginBottom: '60px',
       }}
     >
       <Grid

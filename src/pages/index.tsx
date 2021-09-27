@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       {/* <AboutMeSection sectionEl={sectionEl} /> */}
       <hr style={{ borderColor: '#E6ECF855' }} />
       <KnowledgeSection />
-      {/* <Footer /> */}
+      <Footer />
     </Box>
   );
 };

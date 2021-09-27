@@ -18,32 +18,32 @@ type SocialLinksProps = {
 export const SocialLinks: React.FC<SocialLinksProps> = ({ sx, padding }) => {
   return (
     <Grid container sx={sx}>
-      <Grid item xs={6} sm={3}>
+      <Grid item xl={2} />
+      <Grid item xs={6} sm={3} xl={2}>
         <a href={links.instagram}>
           <Instagram
             sx={{ color: '#575A63', display: 'flex', margin: 'auto' }}
           />
         </a>
       </Grid>
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={6} sm={3} xl={2}>
         <a href={links.linkedIn}>
           <LinkedIn
             sx={{ color: '#575A63', display: 'flex', margin: 'auto' }}
           />
-          {/* <LinkedIn sx={{ color: '#575A63', padding: `0 ${padding}` }} /> */}
         </a>
       </Grid>
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={6} sm={3} xl={2}>
         <a href={links.github}>
           <GitHub sx={{ color: '#575A63', display: 'flex', margin: 'auto' }} />
-          {/* <GitHub sx={{ color: '#575A63', paddingRight: `${padding}` }} /> */}
         </a>
       </Grid>
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={6} sm={3} xl={2}>
         <a href={links.twitter}>
           <Twitter sx={{ color: '#575A63', display: 'flex', margin: 'auto' }} />
         </a>
       </Grid>
+      <Grid item xl={2} />
     </Grid>
   );
 };
