@@ -51,11 +51,7 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
           </a>
         </Typography>
       </Grid>
-      <Grid
-        item
-        sm={4}
-        sx={{ display: 'flex', margin: 'auto', marginBottom: '60px' }}
-      >
+      <Grid item sm={4} sx={{ display: 'flex', margin: 'auto' }}>
         <Avatar
           sx={{ width: '270px', height: '270px', margin: 'auto' }}
           src='/images/avatar.jpg'
