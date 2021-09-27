@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Typography, Box, Avatar } from '@mui/material';
 import { theme } from 'src/consts/theme/theme';
-import { Navbar, Hero } from '@/components/index';
+import { Navbar, Hero, Footer } from '@/components/index';
 import { useRef } from 'react';
 import Image from 'next/image';
 
@@ -52,6 +52,7 @@ const Home: NextPage = () => {
       <Box
         sx={{ height: '50vh', width: '100%', backgroundColor: 'gray' }}
       ></Box>
+      <Footer />
     </Box>
   );
 };

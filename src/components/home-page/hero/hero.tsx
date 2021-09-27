@@ -1,14 +1,9 @@
 import { theme } from '@/consts/index';
-import {
-  Place,
-  Instagram,
-  LinkedIn,
-  Twitter,
-  GitHub,
-} from '@mui/icons-material';
+import { Place } from '@mui/icons-material';
 import { Box, Typography, Container } from '@mui/material';
 import React from 'react';
 import { Navbar } from 'src/components/navbar/navbar';
+import { SocialLinks } from '@/components/index';
 
 type HeroProps = {
   sectionEl: any;
@@ -102,7 +97,7 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
           />
         </Box>
 
-        <Box
+        <SocialLinks
           sx={{
             display: 'flex',
             flex: 1,
@@ -110,12 +105,8 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
             paddingBottom: '40px',
             paddingRight: '30px',
           }}
-        >
-          <Instagram sx={{ color: '#575A63' }} />
-          <LinkedIn sx={{ color: '#575A63', padding: '0 16px' }} />
-          <GitHub sx={{ color: '#575A63', paddingRight: '16px' }} />
-          <Twitter sx={{ color: '#575A63' }} />
-        </Box>
+          padding='16px'
+        />
       </Container>
     </Box>
   );
