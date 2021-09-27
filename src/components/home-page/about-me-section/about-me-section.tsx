@@ -1,5 +1,5 @@
 import { links, theme } from '@/consts/index';
-import { Typography, Avatar } from '@mui/material';
+import { Typography, Avatar, Grid } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { MutableRefObject } from 'react';
 
@@ -11,17 +11,27 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
   sectionEl,
 }) => {
   return (
-    <Box
+    <Grid
+      container
       sx={{
         display: 'flex',
-        height: '50vh',
-        padding: '0 200px',
+        minHeight: '50vh',
+        // padding: '0 200px',
         alignItems: 'center',
         color: theme.palette.secondary.contrastText,
       }}
       ref={sectionEl}
     >
-      <Box sx={{ display: 'inline-block', width: '600px', margin: 'auto' }}>
+      <Grid
+        item
+        sm={8}
+        sx={{
+          display: 'inline-block',
+          width: '600px',
+          margin: 'auto',
+          padding: '60px',
+        }}
+      >
         <Typography sx={{ marginBottom: '26px' }} variant='h3'>
           Hi, I’m Sean Yasnogordski
           <Typography variant='subtitle1'>
@@ -40,13 +50,18 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
             <b>Github.</b>
           </a>
         </Typography>
-      </Box>
-
-      <Avatar
-        sx={{ width: '270px', height: '270px', margin: 'auto' }}
-        src='/images/avatar.jpg'
-        alt='Sean Yasnogorodski'
-      />
-    </Box>
+      </Grid>
+      <Grid
+        item
+        sm={4}
+        sx={{ display: 'flex', margin: 'auto', marginBottom: '60px' }}
+      >
+        <Avatar
+          sx={{ width: '270px', height: '270px', margin: 'auto' }}
+          src='/images/avatar.jpg'
+          alt='Sean Yasnogorodski'
+        />
+      </Grid>
+    </Grid>
   );
 };

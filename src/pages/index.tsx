@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <Box sx={{ width: '100%' }}>
       <Hero sectionEl={sectionEl} />
-      {/* <AboutMeSection sectionEl={sectionEl} /> */}
+      <AboutMeSection sectionEl={sectionEl} />
       <hr style={{ borderColor: '#E6ECF855' }} />
       <KnowledgeSection />
       <Footer />

@@ -36,6 +36,7 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
           justifyContent: 'center',
           alignItems: 'center',
           flexFlow: 'column',
+          textAlign: 'center',
           flex: 1,
         }}
       >
