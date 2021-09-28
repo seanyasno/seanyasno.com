@@ -25,13 +25,13 @@ export const KnowledgeSection: React.FC = () => {
           My Speciallity Knowledge
         </Typography>
         <Typography paragraph variant='h6'>
-          I have a great passion for programming, and throughout the years I’ve
-          been experiencing different subjects on the programming spectrum. From
-          coding in low level languages (Assembely, C/C++), to coding in hgih
-          level languages (Java, C#, Python).
+          I have a great passion for programming, and throughout the years
+          I&apos;ve been experiencing different subjects on the programming
+          spectrum. From coding in low level languages (Assembely, C/C++), to
+          coding in hgih level languages (Java, C#, Python).
         </Typography>
         <Typography paragraph variant='h6'>
-          In addion to coding, I've also experienced some DevOps, Linux and
+          In addion to coding, I&apos;ve also experienced some DevOps, Linux and
           Networking. All this knowledge I gathered through making projects,
           taking courses, CTFs, work and just reading and watching youtube
           videos.

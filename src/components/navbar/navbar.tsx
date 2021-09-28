@@ -5,14 +5,14 @@ export const Navbar: React.FC = () => {
   return (
     <AppBar sx={{ height: '6vh' }} position='relative' elevation={0}>
       <Toolbar sx={{ justifyContent: 'end' }}>
-        <Link href='/'>
+        <Link passHref={true} href='/'>
           <Typography
             sx={{ fontWeight: 'light', marginRight: '30px', cursor: 'pointer' }}
           >
             Home
           </Typography>
         </Link>
-        <Link href='/blogs'>
+        <Link passHref={true} href='/blogs'>
           <Typography
             sx={{ fontWeight: 'light', marginRight: '30px', cursor: 'pointer' }}
           >
