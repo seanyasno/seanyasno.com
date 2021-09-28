@@ -28,7 +28,7 @@ export const KnowledgeSection: React.FC = () => {
           I have a great passion for programming, and throughout the years
           I&apos;ve been experiencing different subjects on the programming
           spectrum. From coding in low level languages (Assembely, C/C++), to
-          coding in hgih level languages (Java, C#, Python).
+          coding in high level languages (Java, C#, Python).
         </Typography>
         <Typography paragraph variant='h6'>
           In addion to coding, I&apos;ve also experienced some DevOps, Linux and
