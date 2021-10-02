@@ -134,8 +134,8 @@ const Home: NextPage = () => {
         </Typography>
         <Grid container spacing={4}>
           {items.map(({ icon, title, content }, index) => (
-            <Grid item xs={12} lg={6}>
-              <Item key={index} title={title} icon={icon}>
+            <Grid key={index} item xs={12} lg={6}>
+              <Item title={title} icon={icon}>
                 {content}
               </Item>
             </Grid>
