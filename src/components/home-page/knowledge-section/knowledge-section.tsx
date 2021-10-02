@@ -22,7 +22,7 @@ export const KnowledgeSection: React.FC = () => {
         sx={{ display: 'inline-block', marginTop: '80px', padding: '0 60px' }}
       >
         <Typography variant='h3' sx={{ marginBottom: '30px' }}>
-          My Speciallity Knowledge
+          My Speciality Knowledge
         </Typography>
         <Typography paragraph variant='h6'>
           I have a great passion for programming, and throughout the years

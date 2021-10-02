@@ -39,8 +39,8 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
           </Typography>
         </Typography>
         <Typography paragraph variant='h6'>
-          I speciallize in rapidly building web and mobile applications. I’m
-          also a high passion developer with intense curiosity for creating more
+          I specialize in rapidly building web and mobile applications. I’m also
+          a high passion developer with intense curiosity for creating more
           content and expanding my horizon of knowledge.
         </Typography>
         <Typography paragraph variant='h6'>
