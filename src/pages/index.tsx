@@ -5,6 +5,7 @@ import {
   Footer,
   AboutMeSection,
   KnowledgeSection,
+  ResponsiveBox,
 } from '@/components/index';
 import React, { Component, ReactElement, useRef } from 'react';
 import {
@@ -122,12 +123,10 @@ const Home: NextPage = () => {
       <Box sx={{ height: '5vh' }}>
         <hr style={{ borderColor: '#E6ECF855' }} />
       </Box>
-      <Box
-        sx={{
-          backgroundColor: 'white',
-          padding: '10px 60px',
-          marginBottom: '30px',
-        }}
+
+      <ResponsiveBox
+        xsStyle={{ padding: '10px 20px' }}
+        mdStyle={{ padding: '10px 60px' }}
       >
         <Typography variant='h3' sx={{ marginBottom: '30px' }}>
           My Best Strengths
@@ -141,7 +140,7 @@ const Home: NextPage = () => {
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </ResponsiveBox>
       <Footer />
     </Box>
   );
