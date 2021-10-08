@@ -26,12 +26,12 @@ export const KnowledgeSection: React.FC = () => {
           paddingTop: '0',
         }}
       >
-        <Box display={{ xs: 'none', lg: 'block' }}>
+        <Box display={{ xs: 'none', lg: 'block' }} sx={{ margin: 'auto' }}>
           <Image
             alt='programmer'
             width='550px'
-            height='550px'
-            src='/images/undraw_programmer_imem.svg'
+            height='320px'
+            src='/v1633699687/undraw_programmer_imem_byk50k.svg'
           />
         </Box>
       </Grid>
