@@ -5,6 +5,7 @@ import {
   Footer,
   AboutMeSection,
   KnowledgeSection,
+  ResponsiveBox,
 } from '@/components/index';
 import React, { Component, ReactElement, useRef } from 'react';
 import {
@@ -118,16 +119,19 @@ const Home: NextPage = () => {
       <Hero sectionEl={sectionEl} />
       <AboutMeSection sectionEl={sectionEl} />
       <hr style={{ borderColor: '#E6ECF855' }} />
-      <KnowledgeSection />
+      <ResponsiveBox
+        xsStyle={{ padding: '0px 20px', marginTop: '30px' }}
+        mdStyle={{ padding: '40px 60px', marginTop: '20px' }}
+      >
+        <KnowledgeSection />
+      </ResponsiveBox>
       <Box sx={{ height: '5vh' }}>
         <hr style={{ borderColor: '#E6ECF855' }} />
       </Box>
-      <Box
-        sx={{
-          backgroundColor: 'white',
-          padding: '10px 60px',
-          marginBottom: '30px',
-        }}
+
+      <ResponsiveBox
+        xsStyle={{ padding: '10px 20px' }}
+        mdStyle={{ padding: '10px 60px' }}
       >
         <Typography variant='h3' sx={{ marginBottom: '30px' }}>
           My Best Strengths
@@ -141,7 +145,7 @@ const Home: NextPage = () => {
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </ResponsiveBox>
       <Footer />
     </Box>
   );

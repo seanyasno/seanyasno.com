@@ -1,7 +1,7 @@
 import { links, theme } from '@/consts/index';
 import { Typography, Avatar, Grid } from '@mui/material';
-import { Box } from '@mui/system';
 import React, { MutableRefObject } from 'react';
+import { ResponsiveBox } from '@/components/index';
 
 type AboutMeSectionProps = {
   sectionEl: MutableRefObject<null>;
@@ -51,13 +51,25 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
           </a>
         </Typography>
       </Grid>
-      <Grid item sm={4} sx={{ display: 'flex', margin: 'auto' }}>
+      <ResponsiveBox
+        Element={Grid}
+        elementProps={{
+          item: true,
+          md: 4,
+        }}
+        xsStyle={{
+          margin: 'auto',
+          paddingBottom: '60px',
+        }}
+      >
+        {/* <Grid item sm={4} sx={{ display: 'flex', margin: 'auto' }}> */}
         <Avatar
           sx={{ width: '270px', height: '270px', margin: 'auto' }}
           src='/images/avatar.jpg'
           alt='Sean Yasnogorodski'
         />
-      </Grid>
+        {/* </Grid> */}
+      </ResponsiveBox>
     </Grid>
   );
 };
