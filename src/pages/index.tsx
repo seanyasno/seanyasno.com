@@ -120,8 +120,8 @@ const Home: NextPage = () => {
       <AboutMeSection sectionEl={sectionEl} />
       <hr style={{ borderColor: '#E6ECF855' }} />
       <ResponsiveBox
-        xsStyle={{ padding: '0px 20px', marginTop: '50px' }}
-        mdStyle={{ padding: '40px 60px', marginTop: '80px' }}
+        xsStyle={{ padding: '0px 20px', marginTop: '30px' }}
+        mdStyle={{ padding: '40px 60px', marginTop: '20px' }}
       >
         <KnowledgeSection />
       </ResponsiveBox>

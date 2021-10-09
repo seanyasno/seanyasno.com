@@ -3,6 +3,7 @@ import React, { ComponentType } from 'react';
 
 type ResponsiveBoxProps = {
   Element?: ComponentType;
+  elementProps?: {};
   xsStyle?: { [key: string]: unknown };
   smStyle?: { [key: string]: unknown };
   mdStyle?: { [key: string]: unknown };
@@ -13,6 +14,7 @@ type ResponsiveBoxProps = {
 export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
   const {
     Element = Box,
+    elementProps,
     xsStyle,
     smStyle,
     mdStyle,
@@ -24,6 +26,7 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
   return (
     <>
       <Element
+        {...elementProps}
         sx={xsStyle}
         display={{
           xs: 'block',
@@ -36,6 +39,7 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         {children}
       </Element>
       <Element
+        {...elementProps}
         sx={{ ...xsStyle, ...smStyle }}
         display={{
           xs: 'none',
@@ -48,6 +52,7 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         {children}
       </Element>
       <Element
+        {...elementProps}
         sx={{ ...xsStyle, ...smStyle, ...mdStyle }}
         display={{
           xs: 'none',
@@ -60,6 +65,7 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         {children}
       </Element>
       <Element
+        {...elementProps}
         sx={{ ...xsStyle, ...smStyle, ...mdStyle, ...lgStyle }}
         display={{
           xs: 'none',
@@ -72,6 +78,7 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         {children}
       </Element>
       <Element
+        {...elementProps}
         sx={{ ...xsStyle, ...smStyle, ...mdStyle, ...lgStyle, ...xlStyle }}
         display={{
           xs: 'none',
