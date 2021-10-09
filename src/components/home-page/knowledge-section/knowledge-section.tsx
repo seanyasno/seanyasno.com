@@ -8,6 +8,7 @@ export const KnowledgeSection: React.FC = () => {
   return (
     <Grid
       container
+      zeroMinWidth
       sx={{
         display: 'flex',
         minHeight: '50vh',
@@ -37,11 +38,10 @@ export const KnowledgeSection: React.FC = () => {
       </Grid>
       <Grid
         item
+        zeroMinWidth
         lg={6}
         sx={{
           display: 'inline-block',
-          marginTop: '80px',
-          padding: '40px 60px',
           alignItems: 'center',
         }}
       >

@@ -1,7 +1,8 @@
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { ComponentType } from 'react';
 
 type ResponsiveBoxProps = {
+  Element?: ComponentType;
   xsStyle?: { [key: string]: unknown };
   smStyle?: { [key: string]: unknown };
   mdStyle?: { [key: string]: unknown };
@@ -10,11 +11,19 @@ type ResponsiveBoxProps = {
 };
 
 export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
-  const { xsStyle, smStyle, mdStyle, lgStyle, xlStyle, children } = props;
+  const {
+    Element = Box,
+    xsStyle,
+    smStyle,
+    mdStyle,
+    lgStyle,
+    xlStyle,
+    children,
+  } = props;
 
   return (
     <>
-      <Box
+      <Element
         sx={xsStyle}
         display={{
           xs: 'block',
@@ -25,9 +34,9 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         }}
       >
         {children}
-      </Box>
-      <Box
-        sx={smStyle}
+      </Element>
+      <Element
+        sx={{ ...xsStyle, ...smStyle }}
         display={{
           xs: 'none',
           sm: 'block',
@@ -37,9 +46,9 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         }}
       >
         {children}
-      </Box>
-      <Box
-        sx={mdStyle}
+      </Element>
+      <Element
+        sx={{ ...xsStyle, ...smStyle, ...mdStyle }}
         display={{
           xs: 'none',
           sm: 'none',
@@ -49,9 +58,9 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         }}
       >
         {children}
-      </Box>
-      <Box
-        sx={lgStyle}
+      </Element>
+      <Element
+        sx={{ ...xsStyle, ...smStyle, ...mdStyle, ...lgStyle }}
         display={{
           xs: 'none',
           sm: 'none',
@@ -61,9 +70,9 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         }}
       >
         {children}
-      </Box>
-      <Box
-        sx={xlStyle}
+      </Element>
+      <Element
+        sx={{ ...xsStyle, ...smStyle, ...mdStyle, ...lgStyle, ...xlStyle }}
         display={{
           xs: 'none',
           sm: 'none',
@@ -73,7 +82,7 @@ export const ResponsiveBox: React.FC<ResponsiveBoxProps> = (props) => {
         }}
       >
         {children}
-      </Box>
+      </Element>
     </>
   );
 };
