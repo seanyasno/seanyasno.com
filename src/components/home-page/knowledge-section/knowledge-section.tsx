@@ -11,7 +11,6 @@ export const KnowledgeSection: React.FC = () => {
       zeroMinWidth
       sx={{
         display: 'flex',
-        minHeight: '50vh',
         justifyContent: 'space-between',
         color: theme.palette.secondary.contrastText,
         margin: 'auto',
@@ -27,7 +26,7 @@ export const KnowledgeSection: React.FC = () => {
           paddingTop: '0',
         }}
       >
-        <Box display={{ xs: 'none', lg: 'block' }} sx={{ margin: 'auto' }}>
+        <Box display={{ xs: 'none', xl: 'block' }} sx={{ margin: 'auto' }}>
           <Image
             alt='programmer'
             width='550px'
@@ -39,10 +38,11 @@ export const KnowledgeSection: React.FC = () => {
       <Grid
         item
         zeroMinWidth
-        lg={6}
+        xl={6}
         sx={{
           display: 'inline-block',
           alignItems: 'center',
+          margin: 'auto',
         }}
       >
         <Typography variant='h3' sx={{ marginBottom: '30px' }}>
