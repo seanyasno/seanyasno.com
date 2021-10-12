@@ -1,71 +1,15 @@
 import type { NextPage } from 'next';
-import { Box, Grid, Card, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import {
   Hero,
   Footer,
   AboutMeSection,
   KnowledgeSection,
   ResponsiveBox,
+  StrengthsSection,
 } from '@/components/index';
-import React, { Component, ReactElement, useRef } from 'react';
-import {
-  Api,
-  DesktopWindows,
-  Dns,
-  LaptopWindows,
-  PhoneIphone,
-  Storage,
-} from '@mui/icons-material';
-import { theme } from 'src/consts/theme/theme';
-
-type ItemProps = {
-  icon?: ReactElement;
-  title: string;
-};
-
-const Item: React.FC<ItemProps> = (props) => {
-  const { icon, title } = props;
-
-  return (
-    <Card
-      sx={{
-        borderRadius: '12px',
-        padding: '20px 30px',
-        display: 'flex',
-        alignItems: 'center',
-      }}
-      elevation={3}
-    >
-      <Box
-        sx={{ color: theme.palette.primary.main, marginRight: '30px' }}
-        display={{ xs: 'none', lg: 'block' }}
-      >
-        {icon}
-      </Box>
-      <Box>
-        <Box
-          sx={{
-            color: theme.palette.primary.main,
-            alignItems: 'center',
-          }}
-          display={{ xs: 'flex', lg: 'none' }}
-        >
-          <Box
-            sx={{ marginRight: '10px' }}
-            display={{ xs: 'none', sm: 'block' }}
-          >
-            {icon}
-          </Box>
-          <Typography variant='h5'>{title}</Typography>
-        </Box>
-        <Box display={{ xs: 'none', lg: 'block' }}>
-          <Typography variant='h5'>{title}</Typography>
-        </Box>
-        {props.children}
-      </Box>
-    </Card>
-  );
-};
+import React, { ReactElement, useRef } from 'react';
+import { Api, LaptopWindows, PhoneIphone, Storage } from '@mui/icons-material';
 
 const Home: NextPage = () => {
   const sectionEl = useRef(null);
@@ -133,18 +77,7 @@ const Home: NextPage = () => {
         xsStyle={{ padding: '10px 20px', paddingBottom: '50px' }}
         mdStyle={{ padding: '10px 60px' }}
       >
-        <Typography variant='h3' sx={{ marginBottom: '30px' }}>
-          My Best Strengths
-        </Typography>
-        <Grid container spacing={4}>
-          {items.map(({ icon, title, content }, index) => (
-            <Grid key={index} item xs={12} lg={6}>
-              <Item title={title} icon={icon}>
-                {content}
-              </Item>
-            </Grid>
-          ))}
-        </Grid>
+        <StrengthsSection items={items} />
       </ResponsiveBox>
       <Footer />
     </Box>
