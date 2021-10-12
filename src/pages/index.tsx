@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         title: 'Database Management',
         content: (
           <Typography sx={{ fontWeight: 'light' }} variant='h6'>
-            I can connect to different type of databases such as{' '}
+            I can work with different type of databases such as{' '}
             <b>PostgreSQL</b> and <b>MongoDB</b>.
           </Typography>
         ),
