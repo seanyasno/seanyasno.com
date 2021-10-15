@@ -8,7 +8,6 @@ export const KnowledgeSection: React.FC = () => {
   return (
     <Grid
       container
-      zeroMinWidth
       sx={{
         display: 'flex',
         justifyContent: 'space-between',

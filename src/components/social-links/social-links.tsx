@@ -18,7 +18,6 @@ type SocialLinksProps = {
 export const SocialLinks: React.FC<SocialLinksProps> = ({ sx, padding }) => {
   return (
     <Grid container sx={sx}>
-      <Grid item xl={2} />
       <Grid item xs={6} sm={3} xl={2}>
         <a href={links.instagram}>
           <Instagram

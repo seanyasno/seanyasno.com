@@ -1,9 +1,9 @@
+import { useRouter } from 'next/dist/client/router';
 import { ThemeProvider } from '@emotion/react';
 import type { AppProps } from 'next/app';
 import { theme } from '@/consts/index';
-import '../styles/globals.css';
-import { useRouter } from 'next/dist/client/router';
 import { useEffect } from 'react';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
