@@ -70,34 +70,6 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
           </Typography>
         </Box>
 
-        {/* <Box
-          sx={{
-            display: 'flex',
-            flex: 1,
-            flexFlow: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <Typography
-            sx={{ color: '#877D61', cursor: 'pointer' }}
-            onClick={() => {
-              sectionEl.sectionEl.current.scrollIntoView({
-                behavior: 'smooth',
-              });
-            }}
-          >
-            Scroll Down
-          </Typography>
-          <Box
-            sx={{
-              backgroundColor: '#877D61',
-              height: '100px',
-              width: '1px',
-              marginTop: '30px',
-            }}
-          />
-        </Box> */}
-
         <SocialLinks
           sx={{
             display: 'flex',
@@ -106,7 +78,6 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
             justifyContent: 'end',
             paddingBottom: '40px',
           }}
-          padding='0px'
         />
       </Container>
     </Box>
