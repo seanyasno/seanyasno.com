@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
           </Typography>
         </Box>
 
-        <Box
+        {/* <Box
           sx={{
             display: 'flex',
             flex: 1,
@@ -96,17 +96,17 @@ export const Hero: React.FC<HeroProps> = (sectionEl: any) => {
               marginTop: '30px',
             }}
           />
-        </Box>
+        </Box> */}
 
         <SocialLinks
           sx={{
             display: 'flex',
             flex: 1,
+            maxWidth: '400px',
             justifyContent: 'end',
             paddingBottom: '40px',
-            paddingRight: '30px',
           }}
-          padding='16px'
+          padding='0px'
         />
       </Container>
     </Box>
