@@ -18,26 +18,26 @@ type SocialLinksProps = {
 export const SocialLinks: React.FC<SocialLinksProps> = ({ sx, padding }) => {
   return (
     <Grid container sx={sx}>
-      <Grid item xs={6} sm={3} xl={2}>
+      <Grid item xs={6} xl={3}>
         <a href={links.instagram}>
           <Instagram
             sx={{ color: '#575A63', display: 'flex', margin: 'auto' }}
           />
         </a>
       </Grid>
-      <Grid item xs={6} sm={3} xl={2}>
+      <Grid item xs={6} xl={3}>
         <a href={links.linkedIn}>
           <LinkedIn
             sx={{ color: '#575A63', display: 'flex', margin: 'auto' }}
           />
         </a>
       </Grid>
-      <Grid item xs={6} sm={3} xl={2}>
+      <Grid item xs={6} xl={3}>
         <a href={links.github}>
           <GitHub sx={{ color: '#575A63', display: 'flex', margin: 'auto' }} />
         </a>
       </Grid>
-      <Grid item xs={6} sm={3} xl={2}>
+      <Grid item xs={6} xl={3}>
         <a href={links.twitter}>
           <Twitter sx={{ color: '#575A63', display: 'flex', margin: 'auto' }} />
         </a>
