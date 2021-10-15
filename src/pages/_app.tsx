@@ -4,6 +4,7 @@ import { theme } from '@/consts/index';
 import '../styles/globals.css';
 import { useRouter } from 'next/dist/client/router';
 import { useEffect } from 'react';
+import { Head } from 'next/document';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -25,6 +26,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <title>Sean Yasnogorodski</title>
+      </Head>
       <Component {...pageProps} />
     </ThemeProvider>
   );
