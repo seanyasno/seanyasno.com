@@ -65,7 +65,7 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
         {/* <Grid item sm={4} sx={{ display: 'flex', margin: 'auto' }}> */}
         <Avatar
           sx={{ width: '270px', height: '270px', margin: 'auto' }}
-          src='/images/avatar.jpg'
+          src='/images/avatar.webp'
           alt='Sean Yasnogorodski'
         />
         {/* </Grid> */}
