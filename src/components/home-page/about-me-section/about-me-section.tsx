@@ -15,8 +15,6 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
       container
       sx={{
         display: 'flex',
-        minHeight: '50vh',
-        // padding: '0 200px',
         alignItems: 'center',
         color: theme.palette.secondary.contrastText,
       }}
@@ -29,7 +27,6 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = ({
           display: 'inline-block',
           width: '600px',
           margin: 'auto',
-          padding: '60px',
         }}
       >
         <Typography sx={{ marginBottom: '26px' }} variant='h3'>

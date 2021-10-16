@@ -61,10 +61,19 @@ const Home: NextPage = () => {
   return (
     <Box sx={{ width: '100%' }}>
       <Hero sectionEl={sectionEl} />
-      <AboutMeSection sectionEl={sectionEl} />
+      <ResponsiveBox
+        xsStyle={{ padding: '0px 20px', marginTop: '50px' }}
+        mdStyle={{ padding: '20px 60px', marginTop: '0px' }}
+      >
+        <AboutMeSection sectionEl={sectionEl} />
+      </ResponsiveBox>
       <hr style={{ borderColor: '#E6ECF855' }} />
       <ResponsiveBox
-        xsStyle={{ padding: '0px 20px', marginTop: '10px' }}
+        xsStyle={{
+          padding: '0px 20px',
+          marginTop: '50px',
+          marginBottom: '30px',
+        }}
         mdStyle={{ padding: '20px 60px', marginTop: '0px' }}
       >
         <KnowledgeSection />

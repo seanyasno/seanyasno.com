@@ -13,7 +13,7 @@ const Item: React.FC<ItemProps> = (props) => {
   return (
     <Card
       sx={{
-        borderRadius: '12px',
+        borderRadius: '15px',
         padding: '20px 30px',
         display: 'flex',
         alignItems: 'center',
