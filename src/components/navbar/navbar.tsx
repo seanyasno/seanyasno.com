@@ -8,7 +8,7 @@ export const Navbar: React.FC = () => {
       <Toolbar>
         <ResponsiveBox
           display='flex'
-          mdStyle={{ marginRight: 0 }}
+          smStyle={{ marginRight: '30px' }}
           xsStyle={{ margin: 'auto' }}
         >
           <Link passHref={true} href='/'>
@@ -36,9 +36,7 @@ export const Navbar: React.FC = () => {
           <Typography sx={{ fontWeight: 'light', marginRight: '30px' }}>
             About
           </Typography>
-          <Typography sx={{ fontWeight: 'light', marginRight: '30px' }}>
-            Contact
-          </Typography>
+          <Typography sx={{ fontWeight: 'light' }}>Contact</Typography>
         </ResponsiveBox>
       </Toolbar>
     </AppBar>
